@@ -24,7 +24,7 @@ jobs:
           name: Build image
           command: |
             FULL_DOCKER_IMAGE_NAME=$(cat full_docker_image_name)
-            docker build -t $FULL_DOCKER_IMAGE_NAME -f hello-app/Dockerfile hello-app/
+            docker build -t $FULL_DOCKER_IMAGE_NAME -f Dockerfile .
       - run:
           name: Push image
           command: |
@@ -34,7 +34,6 @@ jobs:
               echo $GCLOUD_SERVICE_KEY > gcloud-service-key.json
               gcloud auth activate-service-account --key-file gcloud-service-key.json
               gcloud --quiet auth configure-docker
-              docker push $FULL_DOCKER_IMAGE_NAME
             else
               echo "Not master branch; skipping image push.."
             fi
