@@ -28,6 +28,6 @@ spec:
     spec:
       containers:
         - name: hello-app
-          image: DOCKER_IMAGE_NAME
+          image: ngnix-test-kubernete
           ports:
             - containerPort: 80
