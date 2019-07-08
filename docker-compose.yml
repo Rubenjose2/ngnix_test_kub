@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  nginxserver:
+    image: nginx:stable-alpine
+    container_name: nginx
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./dist:/var/www
+    ports:
+      - "80:80"

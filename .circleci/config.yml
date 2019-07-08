@@ -1,17 +1,8 @@
-# This is a test to make run an simple static website on a ngnix server
-
 version: 2
-# First Creating a default Google Cloud Service SDK
-defaults: &defaults
-  docker:
-    - image: google/cloud-sdk@sha256:126a49cfa2aa6e20d561fa14999bf657bc341efeba04939bd2f612bf843d12a6
 jobs:
   build:
-    docker:
-      - image: nginx:stable-alpine
-
-workflows:
-  version: 2
-  test:
-    jobs:
-      - build
+    docker: # use the docker executor type; machine and macos executors are also supported
+      - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
+    steps:
+      - checkout # check out the code in the project directory
+      - run: echo "hello world" # run the `echo` command
