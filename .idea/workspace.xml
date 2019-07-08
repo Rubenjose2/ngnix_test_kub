@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aad02cb-82f3-4a07-ad4d-b30306ecffc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,10 +26,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/circleci/config.yml">
+        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="230">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -48,6 +49,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/circleci/config.yml" />
+        <option value="$PROJECT_DIR$/.circleci/config.yml" />
       </list>
     </option>
   </component>
@@ -69,11 +71,6 @@
             <path>
               <item name="nginx_test_kub" type="b2602c69:ProjectViewProjectNode" />
               <item name="nginx_test_kub" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nginx_test_kub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nginx_test_kub" type="462c0819:PsiDirectoryNode" />
-              <item name="circleci" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -115,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562186160381</updated>
-      <workItem from="1562186168875" duration="3646000" />
+      <workItem from="1562186168875" duration="4564000" />
     </task>
     <task id="LOCAL-00001" summary="Creating the First file to push a pipe to google services">
       <created>1562593504908</created>
@@ -124,11 +121,32 @@
       <option name="project" value="LOCAL" />
       <updated>1562593504908</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Creating the First file to push a pipe to google services">
+      <created>1562593852036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562593852036</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Creating the First file to push a pipe to google services">
+      <created>1562593955476</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562593955476</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Creating the First file to push a pipe to google services">
+      <created>1562594647092</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562594647092</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3646000" />
+    <option name="totallyTimeSpent" value="4564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="23" width="1693" height="1350" extended-state="0" />
@@ -174,10 +192,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circleci/config.yml">
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="230">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>
