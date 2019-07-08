@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="117" column="26" lean-forward="true" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
+            <state relative-caret-position="467">
+              <caret line="45" column="120" lean-forward="true" selection-start-line="45" selection-start-column="120" selection-end-line="45" selection-end-column="120" />
             </state>
           </provider>
         </entry>
@@ -102,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562186160381</updated>
-      <workItem from="1562186168875" duration="12191000" />
+      <workItem from="1562186168875" duration="12422000" />
     </task>
     <task id="LOCAL-00001" summary="Creating the First file to push a pipe to google services">
       <created>1562593504908</created>
@@ -209,11 +209,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562609584099</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Creating the First file to push a pipe to google services">
+      <created>1562609824970</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1562609824970</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Creating the First file to push a pipe to google services">
+      <created>1562609944510</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1562609944510</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12191000" />
+    <option name="totallyTimeSpent" value="12422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="23" width="1691" height="1350" extended-state="0" />
@@ -222,11 +236,11 @@
       <window_info id="Gulp" side_tool="true" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2498484" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32930756" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32930756" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -290,8 +304,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="117" column="26" lean-forward="true" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
+        <state relative-caret-position="467">
+          <caret line="45" column="120" lean-forward="true" selection-start-line="45" selection-start-column="120" selection-end-line="45" selection-end-column="120" />
         </state>
       </provider>
     </entry>
