@@ -61,11 +61,6 @@ jobs:
       - attach_workspace:
           at: workspace
       - run:
-          name: Install utils
-          command: |
-            apt-get update
-            apt-get install
-      - run:
           name: Deploy
           command: |
             echo $GCLOUD_SERVICE_KEY  > gcloud-service-key.json
