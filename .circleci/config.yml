@@ -115,7 +115,7 @@ example:
       workflows:
         main:
           jobs:
-            - build
+            - publish-and-rollout-image
             - gke/publish-and-rollout-image:
                 context: gcp-testing
                 deployment: orb-badge-server
