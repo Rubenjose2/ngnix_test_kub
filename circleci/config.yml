@@ -1,0 +1,16 @@
+# This is a test to make run an simple static website on a ngnix server
+
+version: 2
+# First Creating a default Google Cloud Service SDK
+defauls: &defatuls
+  docker:
+    - image: google/cloud-sdk@sha256:126a49cfa2aa6e20d561fa14999bf657bc341efeba04939bd2f612bf843d12a6
+
+jobs:
+  <<: *defatuls
+  steps:
+    - checkout
+    - setup_remote_docker
+    - run:
+        name: Create a Ngnix Server
+          - image: nginx:stable-alpine
