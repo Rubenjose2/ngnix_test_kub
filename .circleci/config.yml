@@ -2,14 +2,10 @@
 
 version: 2
 # First Creating a default Google Cloud Service SDK
-defauls: &defaults
+defaults: &defaults
   docker:
     - image: google/cloud-sdk@sha256:126a49cfa2aa6e20d561fa14999bf657bc341efeba04939bd2f612bf843d12a6
-
 jobs:
-  <<: *defaults
-  steps:
-    - checkout
-    - setup_remote_docker
-    - docker:
-        - image: nginx:stable-alpine
+  install:
+    docker:
+      - image: nginx:stable-alpine
