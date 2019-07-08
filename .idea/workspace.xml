@@ -18,7 +18,11 @@
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-19">
+              <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -57,11 +61,6 @@
             <path>
               <item name="nginx_test_kub" type="b2602c69:ProjectViewProjectNode" />
               <item name="nginx_test_kub" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nginx_test_kub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nginx_test_kub" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -103,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562186160381</updated>
-      <workItem from="1562186168875" duration="10239000" />
+      <workItem from="1562186168875" duration="11531000" />
     </task>
     <task id="LOCAL-00001" summary="Creating the First file to push a pipe to google services">
       <created>1562593504908</created>
@@ -182,15 +181,28 @@
       <option name="project" value="LOCAL" />
       <updated>1562602052401</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Creating the First file to push a pipe to google services">
+      <created>1562602431482</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1562602431482</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Creating the First file to push a pipe to google services">
+      <created>1562608836341</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1562608836341</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10239000" />
+    <option name="totallyTimeSpent" value="11531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="23" width="1691" height="1350" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Gulp" side_tool="true" />
       <window_info id="npm" side_tool="true" />
@@ -262,7 +274,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
