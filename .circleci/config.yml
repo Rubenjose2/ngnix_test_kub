@@ -9,3 +9,9 @@ jobs:
   build:
     docker:
       - image: nginx:stable-alpine
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - build
