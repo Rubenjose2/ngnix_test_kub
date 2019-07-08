@@ -22,9 +22,6 @@ commands:
   rollout-image:
     description: "Update a deployment's Docker image."
     parameters:
-      cluster:
-        description: "The Kubernetes cluster name."
-        type: string
       deployment:
         description: "The Kubernetes deployment name."
         type: string
@@ -36,7 +33,7 @@ commands:
         type: string
     steps:
       - run: |
-          gcloud container clusters get-credentials <<parameters.cluster>>
+          gcloud container clusters get-credentials <<parameters.deployment>>
           kubectl set image deployment <<parameters.deployment>> <<parameters.container>>=<<parameters.image>>
 
 jobs:
@@ -44,9 +41,6 @@ jobs:
     description: "Update cluster with new Docker image."
     machine: true
     parameters:
-      cluster:
-        description: "The Kubernetes cluster name."
-        type: string
       deployment:
         description: "The Kubernetes deployment name."
         type: string
@@ -98,7 +92,6 @@ jobs:
           image: <<parameters.image>>
           tag: <<parameters.tag>>
       - rollout-image:
-          cluster: "<<parameters.cluster>>"
           deployment: "<<parameters.deployment>>"
           container: "<<parameters.container>>"
           image: "<<parameters.image>>"
@@ -106,7 +99,7 @@ jobs:
 example:
   publish-and-rollout-image:
     description: |
-      "The simplest example of using this Orb. Logs into GCP, builds and 
+      "The simplest example of using this Orb. Logs into GCP, builds and
       publishes a Docker image, and then rolls the image out to a GKE cluster."
     usage:
       version: 2.1
@@ -115,7 +108,7 @@ example:
       workflows:
         main:
           jobs:
-            - publish-and-rollout-image
+            - build
             - gke/publish-and-rollout-image:
                 context: gcp-testing
                 deployment: orb-badge-server
