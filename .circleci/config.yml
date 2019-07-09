@@ -30,8 +30,6 @@ jobs:
             else
               echo "stage_version_$APPLICATION_NAME" > application_name
             fi
-            $FULL_NAME_APPLICATION_NAME=$(cat application_name)
-            echo $FULL_NAME_APPLICATION_NAME
       - run:
           name: Build image
           command: |
