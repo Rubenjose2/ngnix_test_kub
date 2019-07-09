@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="843">
-              <caret line="86" column="16" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+            <state relative-caret-position="378">
+              <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dockermanifest/kubernete-config.yaml.template">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            <state relative-caret-position="581">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -57,6 +57,11 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,9 +70,9 @@
         <option value="$PROJECT_DIR$/nginx/default.conf" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/dockermanifest/kubernete-config.yaml.template" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/dist/index.html" />
+        <option value="$PROJECT_DIR$/dockermanifest/kubernete-config.yaml.template" />
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
       </list>
     </option>
@@ -141,7 +146,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562186160381</updated>
-      <workItem from="1562186168875" duration="23799000" />
+      <workItem from="1562186168875" duration="27948000" />
     </task>
     <task id="LOCAL-00001" summary="Creating the First file to push a pipe to google services">
       <created>1562593504908</created>
@@ -346,11 +351,67 @@
       <option name="project" value="LOCAL" />
       <updated>1562687805112</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Start building master and test branch deployment">
+      <created>1562695771076</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1562695771076</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Start building master and test branch deployment">
+      <created>1562696598504</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1562696598504</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Start building master and test branch deployment">
+      <created>1562696952137</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1562696952137</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Start building master and test branch deployment">
+      <created>1562697373812</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1562697373812</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Start building master and test branch deployment">
+      <created>1562697766904</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1562697766904</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Start building master and test branch deployment">
+      <created>1562698925427</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1562698925427</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Start building master and test branch deployment">
+      <created>1562699025541</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1562699025541</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Start building master and test branch deployment">
+      <created>1562699751325</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1562699751325</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23799000" />
+    <option name="totallyTimeSpent" value="27948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="23" width="1691" height="1350" extended-state="0" />
@@ -386,7 +447,8 @@
     <MESSAGE value="Working on having deploy" />
     <MESSAGE value="Having a better version and definition to test" />
     <MESSAGE value="Having a working version with deployment and kubernetes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Having a working version with deployment and kubernetes" />
+    <MESSAGE value="Start building master and test branch deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start building master and test branch deployment" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.travis.yml">
@@ -409,13 +471,6 @@
     <entry file="file://$PROJECT_DIR$/src/icon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dockermanifest/kubernete-config.yaml.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -437,10 +492,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dockermanifest/kubernete-config.yaml.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="86" column="16" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+        <state relative-caret-position="378">
+          <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
         </state>
       </provider>
     </entry>
