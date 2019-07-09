@@ -28,6 +28,6 @@ spec:
     spec:
       containers:
         - name: hello-app
-          image: gcr.io/newprotectruben1/ngnix-test-kubernete
+          image: DOCKER_IMAGE_NAME
           ports:
             - containerPort: 80
