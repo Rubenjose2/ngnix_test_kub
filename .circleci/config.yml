@@ -138,6 +138,6 @@ workflows:
       - deploy-stage:
           requires:
             - build
-          filrers:
+          filters:
             branches:
               only: test

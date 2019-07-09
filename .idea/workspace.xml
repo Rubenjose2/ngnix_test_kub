@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+            <state relative-caret-position="566">
+              <caret line="140" column="17" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -146,7 +146,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562186160381</updated>
-      <workItem from="1562186168875" duration="25814000" />
+      <workItem from="1562186168875" duration="26969000" />
     </task>
     <task id="LOCAL-00001" summary="Creating the First file to push a pipe to google services">
       <created>1562593504908</created>
@@ -379,11 +379,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562697373812</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Start building master and test branch deployment">
+      <created>1562697766904</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1562697766904</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Start building master and test branch deployment">
+      <created>1562698925427</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1562698925427</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25814000" />
+    <option name="totallyTimeSpent" value="26969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="23" width="1691" height="1350" extended-state="0" />
@@ -473,8 +487,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+        <state relative-caret-position="566">
+          <caret line="140" column="17" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
         </state>
       </provider>
     </entry>
