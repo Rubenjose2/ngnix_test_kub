@@ -129,12 +129,12 @@ workflows:
           type: approval
           requires:
             - build
-      - deploy-prod:
-          requires:
-            - hold-to-approval
           filters:
             branches:
               only: master
+      - deploy-prod:
+          requires:
+            - hold-to-approval
       - deploy-stage:
           requires:
             - build
