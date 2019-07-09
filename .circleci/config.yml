@@ -93,7 +93,7 @@ jobs:
           name: Deploy
           command: |
             echo $GCLOUD_SERVICE_KEY  > gcloud-service-key.json
-            GOOGLE_CLUSTER_NAME_TEST=stage-$GOOGLE_CLUSTER_NAME
+            GOOGLE_CLUSTER_NAME_TEST=s$GOOGLE_CLUSTER_NAME
             set -x
             gcloud auth activate-service-account --key-file gcloud-service-key.json
             gcloud --quiet config set project $GOOGLE_PROJECT_ID
