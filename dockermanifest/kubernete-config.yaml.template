@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-test
+  name: APPLICATION_NAME
   labels:
-    app: test
+    app: main
 spec:
   selector:
-    app: test
+    app: main
     tier: web
   ports:
     - port: 80
@@ -16,18 +16,18 @@ spec:
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: nginx-test
+  name: APPLICATION_NAME
   labels:
-    app: test
+    app: main
 spec:
   template:
     metadata:
       labels:
-        app: test
+        app: main
         tier: web
     spec:
       containers:
-        - name: nginx-test
+        - name: APPLICATION_NAME
           image: DOCKER_IMAGE_NAME
           ports:
             - containerPort: 80

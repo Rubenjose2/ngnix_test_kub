@@ -21,16 +21,6 @@ jobs:
               echo "gcr.io/$GOOGLE_PROJECT_ID/test-app:$DOCKER_IMAGE_TAG" > full_docker_image_name
             fi
       - run:
-          name: Create a name for the application
-          command: |
-            set -x
-            if [ "${CIRCLE_BRANCH}" == "master" ]
-            then
-              echo "$APPLICATION_NAME" > application_name
-            else
-              echo "stage_version_$APPLICATION_NAME" > application_name
-            fi
-      - run:
           name: Build image
           command: |
             FULL_DOCKER_IMAGE_NAME=$(cat full_docker_image_name)
@@ -81,10 +71,10 @@ jobs:
             fi
             FULL_DOCKER_IMAGE_NAME=$(cat workspace/full_docker_image_name)
             # Replace DOCKER_IMAGE_NAME placeholder in manifest with actual image name
-            KUBE_CONFIG=$(cat dockermanifest/kubernete-config.yaml.template | sed "s|DOCKER_IMAGE_NAME|$FULL_DOCKER_IMAGE_NAME|g")
+            KUBE_CONFIG=$(cat dockermanifest/kubernete-config.yaml.template | sed "s|DOCKER_IMAGE_NAME|$FULL_DOCKER_IMAGE_NAME|; APPLICATION_NAME|$GOOGLE_CLUSTER_NAME|g")
             echo "$KUBE_CONFIG" | kubectl apply -f -
             # Wait for deployment to finish
-            kubectl rollout status deployment/ngixn-test
+            kubectl rollout status deployment/echo "$GOOGLE_CLUSTER_NAME"
             kubectl get pods
       - run:
           name: Test deployed application
@@ -103,6 +93,7 @@ jobs:
           name: Deploy
           command: |
             echo $GCLOUD_SERVICE_KEY  > gcloud-service-key.json
+            $GOOGLE_CLUSTER_NAME=echo "stage_$GOOGLE_CLUSTER_NAME"
             set -x
             gcloud auth activate-service-account --key-file gcloud-service-key.json
             gcloud --quiet config set project $GOOGLE_PROJECT_ID
