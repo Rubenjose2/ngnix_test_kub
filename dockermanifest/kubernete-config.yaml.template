@@ -24,7 +24,7 @@ spec:
     metadata:
       labels:
         app: test
-        tier: test
+        tier: web
     spec:
       containers:
         - name: nginx-test
