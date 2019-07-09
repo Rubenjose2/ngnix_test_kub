@@ -28,6 +28,6 @@ spec:
     spec:
       containers:
         - name: hello-app
-          image: ngnix-test-kubernete
+          image: gcr.io/newprotectruben1/ngnix-test-kubernete
           ports:
             - containerPort: 80
