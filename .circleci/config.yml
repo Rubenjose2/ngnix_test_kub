@@ -41,10 +41,6 @@ jobs:
             FULL_DOCKER_IMAGE_NAME=$(cat full_docker_image_name)
             docker run -d --rm -p 80:80 --name hello-app $FULL_DOCKER_IMAGE_NAME
             docker run --network container:hello-app appropriate/curl --retry 10 --retry-connrefused http://localhost:80
-            if [ "${CIRCLE_BRANCH}" != "master" ]
-            then
-              circleci step halt
-            fi
       - persist_to_workspace:
           root: .
           paths:
@@ -119,6 +115,5 @@ workflows:
     jobs:
       - build
       - deploy:
-          type: approval
           requires:
             - build
