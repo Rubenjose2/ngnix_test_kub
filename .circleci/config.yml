@@ -89,7 +89,7 @@ jobs:
                 if [ "${EXISTING_CLUSTER}" != $GOOGLE_CLUSTER_NAME_TEST ]
                 then
                   # Create cluster if it doesn't already exist
-                  gcloud --quiet container clusters create $GOOGLE_CLUSTER_NAME --num-nodes=1
+                  gcloud --quiet container clusters create $GOOGLE_CLUSTER_NAME_TEST --num-nodes=1
                 else
                   gcloud --quiet container clusters get-credentials $GOOGLE_CLUSTER_NAME_TEST
                 fi
@@ -115,5 +115,6 @@ workflows:
     jobs:
       - build
       - deploy:
+          type: approval
           requires:
             - build
