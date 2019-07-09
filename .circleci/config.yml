@@ -117,7 +117,7 @@ jobs:
           command: |
             # Wait for external ip to be assigned
             sleep 60
-            kubectl get service helloweb
+            kubectl get service nginx-test
 
 
 workflows:
