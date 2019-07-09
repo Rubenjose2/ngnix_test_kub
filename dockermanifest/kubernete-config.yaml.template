@@ -16,7 +16,7 @@ spec:
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: ngnix-test
+  name: nginx-test
   labels:
     app: test
 spec:
@@ -27,7 +27,7 @@ spec:
         tier: test
     spec:
       containers:
-        - name: ngnix-test
+        - name: nginx-test
           image: DOCKER_IMAGE_NAME
           ports:
             - containerPort: 80
