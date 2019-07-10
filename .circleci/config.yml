@@ -71,17 +71,17 @@ jobs:
             fi
             FULL_DOCKER_IMAGE_NAME=$(cat workspace/full_docker_image_name)
             # Replace DOCKER_IMAGE_NAME placeholder in manifest with actual image name
-            KUBE_CONFIG=$(cat dockermanifest/kubernete-config.yaml.template | sed "s|DOCKER_IMAGE_NAME|$FULL_DOCKER_IMAGE_NAME|g")
+            KUBE_CONFIG=$(cat dockermanifest/kubernete-config.yaml.template | sed "s|DOCKER_IMAGE_NAME|$FULL_DOCKER_IMAGE_NAME|g; s|APPLICATION_NAME|$GOOGLE_CLUSTER_NAME|g")
             echo "$KUBE_CONFIG" | kubectl apply -f -
             # Wait for deployment to finish
-            kubectl rollout status deployment/ngixn-test
+            kubectl rollout status deployment/$GOOGLE_CLUSTER_NAME
             kubectl get pods
       - run:
           name: Test deployed application
           command: |
             # Wait for external ip to be assigned
             sleep 60
-            kubectl get service helloweb
+            kubectl get service $GOOGLE_CLUSTER_NAME
   deploy-stage:
     <<: *defaults
     steps:
@@ -93,6 +93,7 @@ jobs:
           name: Deploy
           command: |
             echo $GCLOUD_SERVICE_KEY  > gcloud-service-key.json
+            GOOGLE_CLUSTER_NAME_TEST=$GOOGLE_CLUSTER_NAME-stage
             set -x
             gcloud auth activate-service-account --key-file gcloud-service-key.json
             gcloud --quiet config set project $GOOGLE_PROJECT_ID
@@ -107,17 +108,17 @@ jobs:
             fi
             FULL_DOCKER_IMAGE_NAME=$(cat workspace/full_docker_image_name)
             # Replace DOCKER_IMAGE_NAME placeholder in manifest with actual image name
-            KUBE_CONFIG=$(cat dockermanifest/kubernete-config.yaml.template | sed "s|DOCKER_IMAGE_NAME|$FULL_DOCKER_IMAGE_NAME|g")
+            KUBE_CONFIG=$(cat dockermanifest/kubernete-config.yaml.template | sed "s|DOCKER_IMAGE_NAME|$FULL_DOCKER_IMAGE_NAME|g;s|APPLICATION_NAME|$GOOGLE_CLUSTER_NAME_TEST|g")
             echo "$KUBE_CONFIG" | kubectl apply -f -
             # Wait for deployment to finish
-            kubectl rollout status deployment/nginx-test
+            kubectl rollout status deployment/$GOOGLE_CLUSTER_NAME_TEST
             kubectl get pods
       - run:
           name: Test deployed application
           command: |
             # Wait for external ip to be assigned
             sleep 60
-            kubectl get service nginx-test
+            kubectl get service $GOOGLE_CLUSTER_NAME_TEST
 
 
 workflows:
@@ -129,12 +130,12 @@ workflows:
           type: approval
           requires:
             - build
-      - deploy-prod:
-          requires:
-            - hold-to-approval
           filters:
             branches:
               only: master
+      - deploy-prod:
+          requires:
+            - hold-to-approval
       - deploy-stage:
           requires:
             - build
