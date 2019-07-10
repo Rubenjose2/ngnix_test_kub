@@ -108,7 +108,7 @@ jobs:
             fi
             FULL_DOCKER_IMAGE_NAME=$(cat workspace/full_docker_image_name)
             # Replace DOCKER_IMAGE_NAME placeholder in manifest with actual image name
-            KUBE_CONFIG=$(cat dockermanifest/kubernete-config.yaml.template | sed "s|DOCKER_IMAGE_NAME|$FULL_DOCKER_IMAGE_NAME|APPLICATION_NAME|$GOOGLE_CLUSTER_NAME_TEST|g")
+            KUBE_CONFIG=$(cat dockermanifest/kubernete-config.yaml.template | sed "s|DOCKER_IMAGE_NAME|$FULL_DOCKER_IMAGE_NAME|g;s|APPLICATION_NAME|$GOOGLE_CLUSTER_NAME_TEST|g")
             echo "$KUBE_CONFIG" | kubectl apply -f -
             # Wait for deployment to finish
             kubectl rollout status deployment/$GOOGLE_CLUSTER_NAME_TEST
